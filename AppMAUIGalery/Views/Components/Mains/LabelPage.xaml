@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMAUIGalery.Views.Components.Mains.LabelPage"
+             Title="LabelPage"
+             BackgroundColor="White">
+    
+    <VerticalStackLayout Margin="10">
+        <Label
+            Text="TEXT"
+            TextTransform="Uppercase"
+            Padding="10"
+            HorizontalTextAlignment="Center"
+            BackgroundColor="Gray"/>
+
+        <Label 
+            Text="Bem vindo a tela de label"
+            TextColor="Red"
+            Padding="10"
+            TextDecorations="Underline"
+            TextTransform="Uppercase"/>
+
+        <Label
+            Text="Bem vindo ao .NET MAUI"
+            Padding="10"
+            FontSize="20"
+            FontAttributes="Bold"
+            FontFamily="OpenSansSemibold"
+            />
+
+        <Label
+            Text="Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker."
+            MaxLines="9"
+            LineHeight="1.4"
+            Margin="0, 0,0,20"
+            />
+
+        <Label Text=".NET MAUI" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="150" BackgroundColor="#F2F2F2" Margin="0, 0,0,20" HorizontalOptions="FillAndExpand" Padding="10" FontSize="20" FontAttributes="Bold"/>
+
+        <Label>
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Lorem Ipsum " TextDecorations="Underline" TextColor="Blue" FontAttributes="Bold">
+                        <Span.GestureRecognizers>
+                            
+                        </Span.GestureRecognizers>
+                    </Span>
+                    <Span Text="é simplesmente uma simulação de texto" FontAttributes="Italic"/>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+        <Label 
+            Text="HTML"
+            BackgroundColor="Gray"
+            Padding="10"
+            HorizontalOptions="FillAndExpand"
+            HorizontalTextAlignment="Center"/>
+
+        <Label
+            Padding="10"
+            BackgroundColor="LightGray"
+            TextType="Html"
+            Text="Opahh, o que você esta achando do MAUI &lt;br/> &lt;br/> &lt;i> Testando estrutura html aqui &lt;/i>"/>
+
+        <Label TextType="Html" BackgroundColor="LightGray">
+            <Label.Text>
+                <![CDATA[
+                <i>Fala galeraa,<br /> estamos testando html aqui no arquivo <strong>xaml</strong> heinn</i>
+                ]]>
+            </Label.Text>
+        </Label>
+    </VerticalStackLayout>
+</ContentPage>

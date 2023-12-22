@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMAUIGalery.Views.Components.List.DataTemplateSelectorPage"
+             Title="DataTemplateSelectorPage"
+             xmlns:utils="clr-namespace:AppMAUIGalery.Views.Components.List.Utils"
+             BackgroundColor="Gray">
+    
+    <ContentPage.Resources>
+        <DataTemplate x:Key="DataTemplateMovieDefault">
+            <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="*, 40" Padding="10">
+                <Label Text="{Binding Name}" FontAttributes="Bold"/>
+                <Label Text="{Binding Description}" Grid.Row="1" Grid.ColumnSpan="2" TextColor="Gray"/>
+                <Label Text="{Binding LaunchYear}" Grid.Row="1" TextColor="Gray"/>
+            </Grid>
+        </DataTemplate>
+        
+        <DataTemplate x:Key="DataTemplateMovieLongMovie">
+            <Grid 
+                BackgroundColor="#FFFFD9"
+                RowDefinitions="Auto, Auto" 
+                ColumnDefinitions="*, 40" 
+                Padding="10">
+                
+                <Label Text="{Binding Name}" FontAttributes="Bold"/>
+                <Label Text="{Binding Description}" Grid.Row="1" Grid.ColumnSpan="2" TextColor="Gray"/>
+                <Label Text="{Binding LaunchYear}" Grid.Row="1" TextColor="Gray"/>
+
+                <VerticalStackLayout 
+                    Grid.Row="1" 
+                    Grid.Column="1" 
+                    VerticalOptions="Center">
+                    
+                    <Image 
+                        Source="clock.png" 
+                        HorizontalOptions="Center"
+                        WidthRequest="20" />
+                    
+                    <Label 
+                        Text="{Binding Duration}"
+                        FontSize="10"/>
+                </VerticalStackLayout>
+                
+            </Grid>
+        </DataTemplate>
+
+        <utils:MovieTemplateSelector x:Key="MoviteTemplateSelector" TemplateDefault="{StaticResource DataTemplateMovieDefault}" TemplateLongMovie="{StaticResource DataTemplateMovieLongMovie}"/>
+
+
+    </ContentPage.Resources>
+    
+    <VerticalStackLayout >
+        <CollectionView x:Name="CollectionViewControll" ItemTemplate="{StaticResource MovieTemplateSelector}"/>
+    </VerticalStackLayout>
+</ContentPage>
+    
+    

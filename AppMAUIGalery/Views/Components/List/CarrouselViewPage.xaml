@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMAUIGalery.Views.Components.List.CarrouselViewPage"
+             Title="CarrouselViewPage"
+             BackgroundColor="White">
+
+    <Grid>
+        <CarouselView x:Name="CarouselViewControl"
+                      Position="7"
+                      PeekAreaInsets="30"
+                      Loop="False"
+                      IndicatorView="IndicatorViewControl">
+        
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <VerticalStackLayout BackgroundColor="#F2F2F2" Margin="10" Padding="10">
+                        <Label Text="{Binding Name}" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold"/>
+                        <Label Text="{Binding Description}" TextColor="Gray" Padding="10" />
+                    
+                        <HorizontalStackLayout Spacing="100" HorizontalOptions="Center">
+                            <Label Text="{Binding Duration}"/>
+                            <Label Text="{Binding LaunchYear}"/>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+
+        <IndicatorView 
+            x:Name="IndicatorViewControl"
+            HorizontalOptions="Center"
+            VerticalOptions="End"
+            Margin="10,30"
+            IndicatorColor="#DFD8F7"
+            SelectedIndicatorColor="#512BD4"
+            IndicatorSize="10"/>
+        
+    </Grid>
+</ContentPage>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMAUIGalery.Views.Components.Cells.SwitchCellPage"
+             Title="SwitchCellPage">
+    
+    <VerticalStackLayout>
+        <TableView>
+            <TableSection Title="Configuração">
+                <SwitchCell Text="Backup" OnColor="Black"/>
+                <SwitchCell Text="Restore" OnColor="Black"/>
+                <SwitchCell Text="Delete" OnColor="Black"/>
+                <SwitchCell Text="Backup" OnColor="Black"/>
+            </TableSection>
+        </TableView>
+    </VerticalStackLayout>
+</ContentPage>

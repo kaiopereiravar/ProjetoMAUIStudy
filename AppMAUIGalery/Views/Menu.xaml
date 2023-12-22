@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMAUIGalery.Views.Menu"
+             Title="Menu"
+             BackgroundColor="#F3F3F3"
+             Padding="20">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="10">
+            <Label 
+            Text="MAUI Galery"
+            Margin="20"
+            FontSize="24"
+            FontFamily="OpenSansSemibold"
+            TextColor="Black"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+            <Label Text="Início" TextColor="Black">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTapInicio"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+            <Label Text="Extra" TextColor="Black"/>
+            <Label Text="Créditos" TextColor="Black" Margin="0,0,0,0"/>
+
+            <VerticalStackLayout x:Name="MenuContainer" Margin="0,10,0,0">
+
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

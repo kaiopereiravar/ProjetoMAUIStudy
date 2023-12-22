@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMAUIGalery.Views.Layouts.FlexLayoutPage"
+             Title="FlexLayoutPage"
+             BackgroundColor="White">
+
+    <FlexLayout Direction="Row" Wrap="Wrap" AlignItems="Center" JustifyContent="Center">
+        <Label Text="Bem vindo a minha pagina conteudo" Padding="10" BackgroundColor="RosyBrown" FlexLayout.AlignSelf="End"/>
+        <Label Text="Bem vindo a minha pagina conteudo" Padding="10" BackgroundColor="SaddleBrown"/>
+        <Label Text="Bem vindo a minha pagina conteudo" Padding="10" BackgroundColor="SandyBrown"/>
+    </FlexLayout>
+</ContentPage>

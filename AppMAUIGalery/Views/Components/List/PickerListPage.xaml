@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMAUIGalery.Views.Components.List.PickerListPage"
+             Title="PickerListPage"
+             BackgroundColor="White">
+
+    <VerticalStackLayout>
+        <Picker 
+            Title="Filmes" 
+            x:Name="PickerControl" 
+            HeightRequest="41"/>    
+
+        <Button Text="Carregar" Clicked="Button_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
+    
+    <!-- com a propiedade ItemDisplayBinding="{Binding (NOME DO ITEM)}" podemos escolher o que o picker vai apresentar-->

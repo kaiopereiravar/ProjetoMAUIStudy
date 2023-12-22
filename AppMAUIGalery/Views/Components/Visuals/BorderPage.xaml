@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMAUIGalery.Views.Components.Visuals.BorderPage"
+             Title="BorderPage"
+             BackgroundColor="White">
+
+    <VerticalStackLayout Padding="10">
+        <Border Padding="10"
+                Stroke="Blue"
+                HeightRequest="150"
+                Margin="0,0,0,10"
+                StrokeThickness="10"
+                
+                StrokeLineJoin="Round"
+                StrokeLineCap="Square"
+                
+                StrokeDashArray="1,1"
+                StrokeDashOffset="0">
+
+            <Label  
+                Text="Testando o frame do tipo border"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+        </Border>
+        
+        <Border Padding="10"
+                Stroke="blue"
+                StrokeShape="RoundRectangle 5,10,15,20">
+            
+            <Label Text="OI, como vai?"/>
+        </Border>
+        
+    </VerticalStackLayout>
+</ContentPage>

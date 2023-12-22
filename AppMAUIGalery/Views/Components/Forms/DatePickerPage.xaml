@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMAUIGalery.Views.Components.Forms.DatePickerPage"
+             Title="DatePickerPage"
+             Background="white">
+    <VerticalStackLayout Padding="10">
+        <Label 
+            Text="Seleção de data"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <DatePicker 
+            Date="2023/12/21"
+            Format="dd/mmmm/yyyy"
+            BackgroundColor="Black"
+            HorizontalOptions="Center"
+            Margin="30"
+            MinimumDate="2023/12/01"
+            MaximumDate="2023/12/20"
+            
+            DateSelected="DatePicker_DateSelected"/>
+
+        <Label 
+            x:Name="LblDate"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+</ContentPage>

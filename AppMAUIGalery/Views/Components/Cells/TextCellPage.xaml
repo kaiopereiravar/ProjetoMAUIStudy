@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMAUIGalery.Views.Components.Cells.TextCellPage"
+             Title="TextCellPage"
+             BackgroundColor="White">
+    
+    <VerticalStackLayout>
+        <TableView>
+            <TableSection Title="Lista de colaboradores" TextColor="Black">
+                <TextCell
+                    Detail="Idade: 17, Cargo: Desenvolvedor Junior"
+                    DetailColor="DarkGray"
+                    Text="Kaua Martins"
+                    TextColor="Blue"/>
+                
+                <TextCell
+                    Detail="Idade: 17, Cargo: Desenvolvedor Junior"
+                    DetailColor="DarkGray"
+                    Text="Kaio Vinicius Morais"
+                    TextColor="Blue"/>
+                
+                <TextCell
+                    Detail="Idade: 17, Cargo: Desenvolvedor Junior"
+                    DetailColor="DarkGray"
+                    Text="Nathan do Carmo"
+                    TextColor="Blue"/>
+
+                <TextCell
+                    Detail="Idade: 17, Cargo: Desenvolvedor Senior"
+                    DetailColor="DarkGray"
+                    Text="Renato ROE"
+                    TextColor="Blue"/>
+
+                <TextCell
+                    Detail="Idade: 18, Cargo: Desenvolvedora front-end"
+                    DetailColor="DarkGray"
+                    Text="Mariana"
+                    TextColor="Purple"/>
+                
+                
+            </TableSection>
+        </TableView>
+    </VerticalStackLayout>
+</ContentPage>

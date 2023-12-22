@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMAUIGalery.Views.Components.Visuals.FramePage"
+             Title="FramePage">
+    
+    <VerticalStackLayout Padding="10">
+        <Frame CornerRadius="0" BorderColor="Blue" HasShadow="True">
+            <Label 
+            Text="Testando o Frame(Não funciona no windows de forma devidamente correta - no android provavelmente sim)"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>
